@@ -1,55 +1,131 @@
-html {
-    position: relative;
-}
+// .hero-container {
+//     display: flex;
+//     position: fixed;
+//     width: 100%;
+//     background: yellow;
+// }
 
-body {
-    background: #515151;
-    color: #aaa;
-}
+// .hero-left {
+//     height: 100vh;
+//     width: 50%;
+//     background: #ddd;
+//     // clip-path: polygon(0 0, 200% 0, 25% 100%, 0 100%);
+//     transform: skewX(-25deg);
+//     h1 {
+//         transform: skewX(25deg);
+//     }
+// }
 
-main {
-    margin: 50px;
-    // Enter this margin bottom to use border, NOT frame
-    // margin-bottom: 10px;
-    p {
-        margin: 0;
-    }
-}
+// .hero-right {
+//     height: 100vh;
+//     width: 50%;
+//     background: pink;
+//     transform: skewX(-25deg);
+//     overflow: hidden;
+//     p {
+//         // transform: translateX(20px);
+//     }
+// }
 
-.sprinkle-border {
-    // To make this a frame, change position to fixed, remove margin-bottom and height
-    position: fixed;
-    top: 20px;
-    left: 20px;
-    right: 20px;
-    bottom: 20px;
-    // margin-bottom: 20px;
+// .hero-container {
+//     position: relative;
+//     height: 100vh;
+//     width: 100vw;
+// }
+
+// .hero-left {
+//     height: 100vh;
+//     width: 100vw;
+//     background: pink;
+//     float: left;
+// }
+
+// .hero-right {
+//     position: absolute;
+//     height: 100vh;
+//     width: 50vw;
+//     background: yellow;
+//     left: 50%;
+//     // transform: skewX(-25deg);
+//     padding: 20px;
+//     box-sizing: border-box;
+//     z-index: 3;
+// }
+
+// .hero-right:before {
+//     position: absolute;
+//     left: 0;
+//     top: 0;
+//     padding: 0;
+//     content: '';
+//     background: yellow;
+//     height: 100vh;
+//     width: 25vw;
+//     display: block;
+//     transform: skewX(-20deg) translateX(-50%);
+//     z-index: 2;
+// }
+
+// h1 {
+//     margin: 0;
+// }
+
+#wrapper{
+    position:relative;
+    width:100vw;
+    height:100vh;
     box-sizing: border-box;
-    // height: 100%;
-    border: 20px solid transparent;
-    border-image-source: url('../images/black-background-multicolor-sprinkles-small.svg');
-    border-image-repeat: round;
-    border-image-slice: 22%;
-    // z-index: -1;
-    opacity: 0.6;
-}
-
-.border-top {
-    position: fixed;
-    top: 0;
-    left: 0;
-    background: #515151;
-    z-index: 2;
-    height: 20px;
-    width: 100%;
-}
-
-.border-bottom {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    background: #515151;
-    z-index: 2;
-    height: 20px;
-    width: 100%;
-}
+  }
+  
+  .layer{
+    position:absolute;
+    width:100vw;
+    min-height:100vh;
+    overflow:hidden;
+  }
+  
+  .content-wrap{
+    position:absolute;
+    width:100vw;
+    min-height:100vh;
+  }
+  
+  .content-body{
+    width:25%;
+    position:absolute;
+    top:50%;
+    text-align:center;
+    transform: translateY(-50%);
+  }
+  
+  .bottom {
+    background: green;
+    z-index:101;
+  }
+  
+  .bottom .content-body{
+    right:10%;
+  }
+  
+  .top{
+    background: red;
+    color:#222;
+    z-index:102;
+    width:50vw;
+  }
+  
+  .top .content-body{
+    left:10%;
+    color:#222;
+  }
+  
+  .skewed .top{
+    transform: skew(-20deg);
+    margin-left:-1000px;
+    width:calc(50vw + 1000px);
+  }
+  
+  .skewed .top .content-wrap {
+    transform: skew(20deg);
+    margin-left:1000px;
+  }
