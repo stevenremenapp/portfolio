@@ -1,64 +1,65 @@
-#wrapper {
-  position: relative;
+body {
+  background: violet;
+}
+
+.hero-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   width: 100vw;
   height: 100vh;
+}
+
+.hero-left {
+  background-size: 200% 200%;
+  background-image: repeating-linear-gradient(-45deg, #333 2px, violet 2px, violet 41px, #333 2px, #333 48px, #333 80px);
+  width: 50vw;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-}
-
-.layer {
-  position: absolute;
-  width: 100vw;
-  min-height: 100vh;
-  overflow: hidden;
-}
-
-.content-wrap {
-  position: absolute;
-  width: 100vw;
-  min-height: 100vh;
-}
-
-.content-body {
-  width: 25%;
-  position: absolute;
-  top: 50%;
+  border: 10px solid #333;
+  margin: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align: center;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
 }
 
-.bottom {
-  background: green;
-  z-index: 101;
+.hero-left h1 {
+  color: #ddd;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  width: 80%;
+  border-radius: 10px;
 }
 
-.bottom .content-body {
-  right: 10%;
+.hero-left:hover {
+  -webkit-animation: animate 20s linear infinite;
+          animation: animate 20s linear infinite;
 }
 
-.top {
-  background: red;
-  color: #222;
-  z-index: 102;
+.hero-right {
+  background: #fff;
   width: 50vw;
+  padding: 20px;
 }
 
-.top .content-body {
-  left: 10%;
-  color: #222;
+@-webkit-keyframes animate {
+  100% {
+    background-position: 100% 100%;
+  }
 }
 
-.skewed .top {
-  -webkit-transform: skew(-20deg);
-          transform: skew(-20deg);
-  margin-left: -1000px;
-  width: calc(50vw + 1000px);
-}
-
-.skewed .top .content-wrap {
-  -webkit-transform: skew(20deg);
-          transform: skew(20deg);
-  margin-left: 1000px;
+@keyframes animate {
+  100% {
+    background-position: 100% 100%;
+  }
 }
 /*# sourceMappingURL=main.css.map */
