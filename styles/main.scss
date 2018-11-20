@@ -4,7 +4,7 @@
 }
 
 body {
-  background: linear-gradient(to left, #d3cce3, #e9e4f0);
+  background: linear-gradient(to right, #ece9e6, #ffffff);
 }
 
 .hero-container {
@@ -14,225 +14,148 @@ body {
   position: relative;
 }
 
-.hero-frame-left-0 {
+.hero-frame {
   border: solid transparent;
-  border-image: linear-gradient(to left, #61c69d 0%, #2d72bc 100%);
   border-image-slice: 1;
   border-width: 20px;
   position: fixed;
+  box-sizing: border-box;
+}
+
+.frame-0 {
+  border-image: linear-gradient(to left, #61c69d 0%, #2d72bc 100%);
   top: 0;
   bottom: 0;
   left: 0;
   width: calc(50vw - 19px);
-  box-sizing: border-box;
 }
 
-.hero-frame-left-1 {
-  border: solid transparent;
+.frame-1 {
   border-image: linear-gradient(to right, #b861c6 0%,#ffc7c7 100%);
-  border-image-slice: 1;
-  border-width: 20px;
-  position: fixed;
   top: 20px;
   bottom: 20px;
   left: 20px;
   width: calc(50vw - 59px);
-  box-sizing: border-box;
 }
 
-.hero-frame-left-2 {
-  border: solid transparent;
+.frame-2 {
   border-image: linear-gradient(to left, #2e98bc 0%, #c66262 100%);
-  border-image-slice: 1;
-  border-width: 20px;
-  position: fixed;
   top: 40px;
   bottom: 40px;
   left: 40px;
   width: calc(50vw - 99px);
-  box-sizing: border-box;
 }
 
-.hero-frame-left-3 {
-  border: solid transparent;
+.frame-3 {
   border-image: linear-gradient(to right, #aa076b, #61045f);
-  border-image-slice: 1;
-  border-width: 20px;
-  position: fixed;
   top: 60px;
   bottom: 60px;
   left: 60px;
   width: calc(50vw - 139px);
-  box-sizing: border-box;
 }
 
-.hero-frame-left-4 {
-  border: solid transparent;
+.frame-4 {
   border-image: linear-gradient(to right, #e65c00, #f9d423);
-  border-image-slice: 1;
-  border-width: 20px;
-  position: fixed;
   top: 80px;
   bottom: 80px;
   left: 80px;
   width: calc(50vw - 179px);
-  box-sizing: border-box;
 }
 
-.hero-frame-left-5 {
-  border: solid transparent;
+.frame-5 {
   border-image: linear-gradient(to right, #acb6e5, #86fde8);
-  border-image-slice: 1;
-  border-width: 20px;
-  position: fixed;
   top: 100px;
   bottom: 100px;
   left: 100px;
   width: calc(50vw - 219px);
-  box-sizing: border-box;
 }
 
-.hero-frame-left-6 {
-  border: solid transparent;
+.frame-6 {
   border-image: linear-gradient(to left, #dd3e54, #6be585);
-  border-image-slice: 1;
-  border-width: 20px;
-  position: fixed;
   top: 120px;
   bottom: 120px;
   left: 120px;
   width: calc(50vw - 259px);
-  box-sizing: border-box;
 }
 
-.hero-frame-left-7 {
-  border: solid transparent;
+.frame-7 {
   border-image: linear-gradient(to left, #c6ffdd, #fbd786, #f7797d);
-  border-image-slice: 1;
-  border-width: 20px;
-  position: fixed;
   top: 140px;
   bottom: 140px;
   left: 140px;
   width: calc(50vw - 299px);
-  box-sizing: border-box;
 }
 
-.hero-frame-left-8 {
-  border: solid transparent;
+.frame-8 {
   border-image: linear-gradient(to left, #4568dc, #b06ab3);
-  border-image-slice: 1;
-  border-width: 20px;
-  position: fixed;
   top: 160px;
   bottom: 160px;
   left: 160px;
   width: calc(50vw - 339px);
-  box-sizing: border-box;
 }
 
-.hero-frame-left-9 {
-  border: solid transparent;
+.frame-9 {
   border-image: linear-gradient(to left, #43c6ac, #f8ffae);
-  border-image-slice: 1;
-  border-width: 20px;
-  position: fixed;
   top: 180px;
   bottom: 180px;
   left: 180px;
   width: calc(50vw - 379px);
-  box-sizing: border-box;
 }
 
-.hero-frame-left-10 {
-  border: solid transparent;
+.frame-10 {
   border-image: linear-gradient(to left, #ffafbd, #ffc3a0);
-  border-image-slice: 1;
-  border-width: 20px;
-  position: fixed;
   top: 200px;
   bottom: 200px;
   left: 200px;
   width: calc(50vw - 419px);
-  box-sizing: border-box;
 }
 
-.hero-frame-left-11 {
-  border: solid transparent;
+.frame-11 {
   border-image: linear-gradient(to left, #ee0979, #ff6a00);
-  border-image-slice: 1;
-  border-width: 20px;
-  position: fixed;
   top: 220px;
   bottom: 220px;
   left: 220px;
   width: calc(50vw - 459px);
-  box-sizing: border-box;
 }
 
-.hero-frame-left-12 {
-  border: solid transparent;
+.frame-12 {
   border-image: linear-gradient(to right, #00c3ff, #ffff1c);
-  border-image-slice: 1;
-  border-width: 20px;
-  position: fixed;
   top: 240px;
   bottom: 240px;
   left: 240px;
   width: calc(50vw - 499px);
-  box-sizing: border-box;
 }
 
-.hero-frame-left-13 {
-  border: solid transparent;
+.frame-13 {
   border-image: linear-gradient(to left, #11998e, #38ef7d);
-  border-image-slice: 1;
-  border-width: 20px;
-  position: fixed;
   top: 260px;
   bottom: 260px;
   left: 260px;
   width: calc(50vw - 539px);
-  box-sizing: border-box;
 }
 
-.hero-frame-left-14 {
-  border: solid transparent;
+.frame-14 {
   border-image: linear-gradient(to left, #eb3349, #f45c43);
-  border-image-slice: 1;
-  border-width: 20px;
-  position: fixed;
   top: 280px;
   bottom: 280px;
   left: 280px;
   width: calc(50vw - 579px);
-  box-sizing: border-box;
 }
 
-.hero-frame-left-15 {
-  border: solid transparent;
+.frame-15 {
   border-image: linear-gradient(to left, #1fa2ff, #12d8fa, #a6ffcb);
-  border-image-slice: 1;
-  border-width: 20px;
-  position: fixed;
   top: 300px;
   bottom: 300px;
   left: 300px;
   width: calc(50vw - 619px);
-  box-sizing: border-box;
 }
 
 .hero-frame-left-16 {
-  border: solid transparent;
   border-image: linear-gradient(to left, #da22ff, #9733ee);
-  border-image-slice: 1;
-  border-width: 20px;
-  position: fixed;
   top: 320px;
   bottom: 320px;
   left: 320px;
   width: calc(50vw - 659px);
-  box-sizing: border-box;
 }
 
 // .hero-frame-left-17 {
@@ -264,6 +187,12 @@ body {
     width: 80%;
     z-index: 2;
     line-height: 0.8;
+    animation: nameGrow 3s;
+    span {
+      display: inline-block;
+      letter-spacing: -22px;
+      transition: 0s 15s;
+    }
   }
   *:hover {
     border-width: 40px;
@@ -274,7 +203,46 @@ body {
 }
 
 .hero-right {
-  background: #fff;
   width: 50vw;
   padding: 20px;
+}
+
+@keyframes nameGrow {
+  0% {
+    transform: scale(0.1);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.85;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes nameLetterAnimation {
+  25% {
+    transform: translateY(-20px) rotate(0);
+  }
+  50% {
+    transform: translateY(-20px) rotate(30deg);
+  }
+  60% {
+    transform: translateY(-20px) rotate(-30deg);
+  }
+  70% {
+    transform: translateY(-10px) rotate(30deg);
+  }
+  80% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+
+.animatedLetter {
+  animation: nameLetterAnimation 3s;
 }
