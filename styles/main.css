@@ -17,19 +17,19 @@ body {
   position: relative;
 }
 
-.hero-frame {
-  border: solid transparent;
-  border-image-slice: 1;
-  border-width: 20px;
-  position: fixed;
+.frame {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  position: fixed;
 }
 
 .frame-0 {
+  border: solid transparent;
   -o-border-image: linear-gradient(to left, #61c69d 0%, #2d72bc 100%);
      border-image: -webkit-gradient(linear, right top, left top, from(#61c69d), to(#2d72bc));
      border-image: linear-gradient(to left, #61c69d 0%, #2d72bc 100%);
+  border-image-slice: 1;
+  border-width: 20px;
   top: 0;
   bottom: 0;
   left: 0;
@@ -37,9 +37,12 @@ body {
 }
 
 .frame-1 {
+  border: solid transparent;
   -o-border-image: linear-gradient(to right, #b861c6 0%, #ffc7c7 100%);
      border-image: -webkit-gradient(linear, left top, right top, from(#b861c6), to(#ffc7c7));
      border-image: linear-gradient(to right, #b861c6 0%, #ffc7c7 100%);
+  border-image-slice: 1;
+  border-width: 20px;
   top: 20px;
   bottom: 20px;
   left: 20px;
@@ -47,9 +50,12 @@ body {
 }
 
 .frame-2 {
+  border: solid transparent;
   -o-border-image: linear-gradient(to left, #2e98bc 0%, #c66262 100%);
      border-image: -webkit-gradient(linear, right top, left top, from(#2e98bc), to(#c66262));
      border-image: linear-gradient(to left, #2e98bc 0%, #c66262 100%);
+  border-image-slice: 1;
+  border-width: 20px;
   top: 40px;
   bottom: 40px;
   left: 40px;
@@ -57,9 +63,12 @@ body {
 }
 
 .frame-3 {
+  border: solid transparent;
   -o-border-image: linear-gradient(to right, #aa076b, #61045f);
      border-image: -webkit-gradient(linear, left top, right top, from(#aa076b), to(#61045f));
      border-image: linear-gradient(to right, #aa076b, #61045f);
+  border-image-slice: 1;
+  border-width: 20px;
   top: 60px;
   bottom: 60px;
   left: 60px;
@@ -67,9 +76,12 @@ body {
 }
 
 .frame-4 {
+  border: solid transparent;
   -o-border-image: linear-gradient(to right, #e65c00, #f9d423);
      border-image: -webkit-gradient(linear, left top, right top, from(#e65c00), to(#f9d423));
      border-image: linear-gradient(to right, #e65c00, #f9d423);
+  border-image-slice: 1;
+  border-width: 20px;
   top: 80px;
   bottom: 80px;
   left: 80px;
@@ -77,9 +89,12 @@ body {
 }
 
 .frame-5 {
+  border: solid transparent;
   -o-border-image: linear-gradient(to right, #acb6e5, #86fde8);
      border-image: -webkit-gradient(linear, left top, right top, from(#acb6e5), to(#86fde8));
      border-image: linear-gradient(to right, #acb6e5, #86fde8);
+  border-image-slice: 1;
+  border-width: 20px;
   top: 100px;
   bottom: 100px;
   left: 100px;
@@ -87,9 +102,12 @@ body {
 }
 
 .frame-6 {
+  border: solid transparent;
   -o-border-image: linear-gradient(to left, #dd3e54, #6be585);
      border-image: -webkit-gradient(linear, right top, left top, from(#dd3e54), to(#6be585));
      border-image: linear-gradient(to left, #dd3e54, #6be585);
+  border-image-slice: 1;
+  border-width: 20px;
   top: 120px;
   bottom: 120px;
   left: 120px;
@@ -97,9 +115,12 @@ body {
 }
 
 .frame-7 {
+  border: solid transparent;
   -o-border-image: linear-gradient(to left, #c6ffdd, #fbd786, #f7797d);
      border-image: -webkit-gradient(linear, right top, left top, from(#c6ffdd), color-stop(#fbd786), to(#f7797d));
      border-image: linear-gradient(to left, #c6ffdd, #fbd786, #f7797d);
+  border-image-slice: 1;
+  border-width: 20px;
   top: 140px;
   bottom: 140px;
   left: 140px;
@@ -107,9 +128,12 @@ body {
 }
 
 .frame-8 {
+  border: solid transparent;
   -o-border-image: linear-gradient(to left, #4568dc, #b06ab3);
      border-image: -webkit-gradient(linear, right top, left top, from(#4568dc), to(#b06ab3));
      border-image: linear-gradient(to left, #4568dc, #b06ab3);
+  border-image-slice: 1;
+  border-width: 20px;
   top: 160px;
   bottom: 160px;
   left: 160px;
@@ -117,9 +141,12 @@ body {
 }
 
 .frame-9 {
+  border: solid transparent;
   -o-border-image: linear-gradient(to left, #43c6ac, #f8ffae);
      border-image: -webkit-gradient(linear, right top, left top, from(#43c6ac), to(#f8ffae));
      border-image: linear-gradient(to left, #43c6ac, #f8ffae);
+  border-image-slice: 1;
+  border-width: 20px;
   top: 180px;
   bottom: 180px;
   left: 180px;
@@ -127,9 +154,12 @@ body {
 }
 
 .frame-10 {
+  border: solid transparent;
   -o-border-image: linear-gradient(to left, #ffafbd, #ffc3a0);
      border-image: -webkit-gradient(linear, right top, left top, from(#ffafbd), to(#ffc3a0));
      border-image: linear-gradient(to left, #ffafbd, #ffc3a0);
+  border-image-slice: 1;
+  border-width: 20px;
   top: 200px;
   bottom: 200px;
   left: 200px;
@@ -137,9 +167,12 @@ body {
 }
 
 .frame-11 {
+  border: solid transparent;
   -o-border-image: linear-gradient(to left, #ee0979, #ff6a00);
      border-image: -webkit-gradient(linear, right top, left top, from(#ee0979), to(#ff6a00));
      border-image: linear-gradient(to left, #ee0979, #ff6a00);
+  border-image-slice: 1;
+  border-width: 20px;
   top: 220px;
   bottom: 220px;
   left: 220px;
@@ -147,9 +180,12 @@ body {
 }
 
 .frame-12 {
+  border: solid transparent;
   -o-border-image: linear-gradient(to right, #00c3ff, #ffff1c);
      border-image: -webkit-gradient(linear, left top, right top, from(#00c3ff), to(#ffff1c));
      border-image: linear-gradient(to right, #00c3ff, #ffff1c);
+  border-image-slice: 1;
+  border-width: 20px;
   top: 240px;
   bottom: 240px;
   left: 240px;
@@ -157,9 +193,12 @@ body {
 }
 
 .frame-13 {
+  border: solid transparent;
   -o-border-image: linear-gradient(to left, #11998e, #38ef7d);
      border-image: -webkit-gradient(linear, right top, left top, from(#11998e), to(#38ef7d));
      border-image: linear-gradient(to left, #11998e, #38ef7d);
+  border-image-slice: 1;
+  border-width: 20px;
   top: 260px;
   bottom: 260px;
   left: 260px;
@@ -167,9 +206,12 @@ body {
 }
 
 .frame-14 {
+  border: solid transparent;
   -o-border-image: linear-gradient(to left, #eb3349, #f45c43);
      border-image: -webkit-gradient(linear, right top, left top, from(#eb3349), to(#f45c43));
      border-image: linear-gradient(to left, #eb3349, #f45c43);
+  border-image-slice: 1;
+  border-width: 20px;
   top: 280px;
   bottom: 280px;
   left: 280px;
@@ -177,19 +219,25 @@ body {
 }
 
 .frame-15 {
+  border: solid transparent;
   -o-border-image: linear-gradient(to left, #1fa2ff, #12d8fa, #a6ffcb);
      border-image: -webkit-gradient(linear, right top, left top, from(#1fa2ff), color-stop(#12d8fa), to(#a6ffcb));
      border-image: linear-gradient(to left, #1fa2ff, #12d8fa, #a6ffcb);
+  border-image-slice: 1;
+  border-width: 20px;
   top: 300px;
   bottom: 300px;
   left: 300px;
   width: calc(50vw - 619px);
 }
 
-.hero-frame-left-16 {
+.frame-16 {
+  border: solid transparent;
   -o-border-image: linear-gradient(to left, #da22ff, #9733ee);
      border-image: -webkit-gradient(linear, right top, left top, from(#da22ff), to(#9733ee));
      border-image: linear-gradient(to left, #da22ff, #9733ee);
+  border-image-slice: 1;
+  border-width: 20px;
   top: 320px;
   bottom: 320px;
   left: 320px;
@@ -221,6 +269,7 @@ body {
   margin: 0;
   width: 80%;
   z-index: 2;
+  letter-spacing: -13px;
   line-height: 0.8;
   -webkit-animation: nameGrow 3s;
           animation: nameGrow 3s;
@@ -228,9 +277,6 @@ body {
 
 .hero-left h1 span {
   display: inline-block;
-  letter-spacing: -22px;
-  -webkit-transition: 0s 15s;
-  transition: 0s 15s;
 }
 
 .hero-left *:hover {
@@ -244,6 +290,15 @@ body {
 .hero-right {
   width: 50vw;
   padding: 20px;
+}
+
+.hero-right h2 {
+  color: #000;
+  font-family: 'DDCHardware', sans-serif;
+  font-size: 65px;
+  margin: 0;
+  line-height: 0.8;
+  text-align: center;
 }
 
 @-webkit-keyframes nameGrow {
@@ -283,6 +338,10 @@ body {
 }
 
 @-webkit-keyframes nameLetterAnimation {
+  0% {
+    -webkit-transform: translateY(0) rotate(0);
+            transform: translateY(0) rotate(0);
+  }
   25% {
     -webkit-transform: translateY(-20px) rotate(0);
             transform: translateY(-20px) rotate(0);
@@ -304,12 +363,16 @@ body {
             transform: translateY(0px) rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(0);
-            transform: rotate(0);
+    -webkit-transform: translateY(0) rotate(0);
+            transform: translateY(0) rotate(0);
   }
 }
 
 @keyframes nameLetterAnimation {
+  0% {
+    -webkit-transform: translateY(0) rotate(0);
+            transform: translateY(0) rotate(0);
+  }
   25% {
     -webkit-transform: translateY(-20px) rotate(0);
             transform: translateY(-20px) rotate(0);
@@ -331,8 +394,8 @@ body {
             transform: translateY(0px) rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(0);
-            transform: rotate(0);
+    -webkit-transform: translateY(0) rotate(0);
+            transform: translateY(0) rotate(0);
   }
 }
 
