@@ -309,3 +309,188 @@ body {
 .animatedLetter {
   animation: nameLetterAnimation 3s;
 }
+
+// FRAME WIDTH MEDIA QUERIES //
+
+
+@media screen and (max-width: 1430px) {
+  .frame-16 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1350px) {
+  .frame-15 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1290px) {
+  .frame-14 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .frame-13 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .frame-12 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1020px) {
+  .frame-11 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 930px) {
+  .frame-10 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 855px) {
+  .frame-9 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 775px) {
+  .frame-8 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 695px) {
+  .frame-7 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 605px) {
+  .frame-6 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 525px) {
+  .frame-5 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 445px) {
+  .frame-4 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 365px) {
+  .frame-3 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 285px) {
+  .frame-2 {
+    display: none;
+  }
+}
+
+// FRAME HEIGHT MEDIA QUERIES //
+
+@media screen and (max-height: 685px) {
+  .frame-16 {
+    display: none;
+  }
+}
+
+@media screen and (max-height: 645px) {
+  .frame-15 {
+    display: none;
+  }
+}
+
+@media screen and (max-height: 605px) {
+  .frame-14 {
+    display: none;
+  }
+}
+
+@media screen and (max-height: 565px) {
+  .frame-13 {
+    display: none;
+  }
+}
+
+@media screen and (max-height: 525px) {
+  .frame-12 {
+    display: none;
+  }
+}
+
+@media screen and (max-height: 485px) {
+  .frame-11 {
+    display: none;
+  }
+}
+
+@media screen and (max-height: 445px) {
+  .frame-10 {
+    display: none;
+  }
+}
+
+@media screen and (max-height: 405px) {
+  .frame-9 {
+    display: none;
+  }
+}
+
+@media screen and (max-height: 365px) {
+  .frame-8 {
+    display: none;
+  }
+}
+
+@media screen and (max-height: 325px) {
+  .frame-7 {
+    display: none;
+  }
+}
+
+@media screen and (max-height: 285px) {
+  .frame-6 {
+    display: none;
+  }
+}
+
+@media screen and (max-height: 245px) {
+  .frame-5 {
+    display: none;
+  }
+}
+
+@media screen and (max-height: 205px) {
+  .frame-4 {
+    display: none;
+  }
+}
+
+@media screen and (max-height: 180px) {
+  .frame-3 {
+    display: none;
+  }
+}
+
+@media screen and (max-height: 140px) {
+  .frame-2 {
+    display: none;
+  }
+}
