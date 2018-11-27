@@ -267,6 +267,45 @@ body {
   }
 }
 
+.menu-icon {
+  position: fixed;
+  height: 40px;
+  width: 40px;
+  top: 20px;
+  right: 20px;
+  // background: red;
+  opacity: 0.8;
+  &:hover {
+    opacity: 1;
+    cursor: pointer;
+    #menu-top {
+      animation: menuIconAnimation 1.5s ease-in-out infinite;
+    }
+    #menu-middle {
+      animation: menuIconAnimation 1.5s ease-in-out 300ms infinite;
+    }
+    #menu-bottom {
+      animation: menuIconAnimation 1.5s ease-in-out 500ms infinite;
+    }
+  }
+}
+
+.menu-closed-icon {
+  position: fixed;
+  height: 40px;
+  width: 40px;
+  top: 50px;
+  right: 50px;
+  opacity: 0.8;
+  &:hover {
+    opacity: 1;
+    cursor: pointer;
+    .menu-closed-x {
+      
+    }
+  }
+}
+
 @keyframes nameGrow {
   0% {
     transform: scale(0.1);
@@ -308,6 +347,21 @@ body {
 
 .animatedLetter {
   animation: nameLetterAnimation 3s;
+}
+
+@keyframes menuIconAnimation {
+  0% {
+    width: 30px;
+  }
+  20% {
+    width: 4px;
+  }
+  80% {
+    width: 32px;
+  }
+  100% {
+    width: 30px;
+  }
 }
 
 // FRAME WIDTH MEDIA QUERIES //

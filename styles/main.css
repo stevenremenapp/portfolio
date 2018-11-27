@@ -303,6 +303,49 @@ body {
   text-align: center;
 }
 
+.menu-icon {
+  position: fixed;
+  height: 40px;
+  width: 40px;
+  top: 20px;
+  right: 20px;
+  opacity: 0.8;
+}
+
+.menu-icon:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.menu-icon:hover #menu-top {
+  -webkit-animation: menuIconAnimation 1.5s ease-in-out infinite;
+          animation: menuIconAnimation 1.5s ease-in-out infinite;
+}
+
+.menu-icon:hover #menu-middle {
+  -webkit-animation: menuIconAnimation 1.5s ease-in-out 300ms infinite;
+          animation: menuIconAnimation 1.5s ease-in-out 300ms infinite;
+}
+
+.menu-icon:hover #menu-bottom {
+  -webkit-animation: menuIconAnimation 1.5s ease-in-out 500ms infinite;
+          animation: menuIconAnimation 1.5s ease-in-out 500ms infinite;
+}
+
+.menu-closed-icon {
+  position: fixed;
+  height: 40px;
+  width: 40px;
+  top: 50px;
+  right: 50px;
+  opacity: 0.8;
+}
+
+.menu-closed-icon:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
 @-webkit-keyframes nameGrow {
   0% {
     -webkit-transform: scale(0.1);
@@ -404,6 +447,36 @@ body {
 .animatedLetter {
   -webkit-animation: nameLetterAnimation 3s;
           animation: nameLetterAnimation 3s;
+}
+
+@-webkit-keyframes menuIconAnimation {
+  0% {
+    width: 30px;
+  }
+  20% {
+    width: 4px;
+  }
+  80% {
+    width: 32px;
+  }
+  100% {
+    width: 30px;
+  }
+}
+
+@keyframes menuIconAnimation {
+  0% {
+    width: 30px;
+  }
+  20% {
+    width: 4px;
+  }
+  80% {
+    width: 32px;
+  }
+  100% {
+    width: 30px;
+  }
 }
 
 @media screen and (max-width: 1430px) {
