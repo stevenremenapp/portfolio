@@ -297,13 +297,22 @@ body {
   top: 50px;
   right: 50px;
   opacity: 0.8;
+  background: pink;
   &:hover {
     opacity: 1;
     cursor: pointer;
     .menu-closed-x {
-      
+      animation: menuCloseIconAnimation 1.5s ease-in-out infinite;
     }
   }
+  // USE FOR MOBILE MEDIA QUERY
+  // &:active {
+  //   opacity: 1;
+  //   cursor: pointer;
+  //   .menu-closed-x {
+  //     animation: menuCloseIconAnimation .5s ease-in-out infinite;
+  //   }
+  // }
 }
 
 @keyframes nameGrow {
@@ -361,6 +370,21 @@ body {
   }
   100% {
     width: 30px;
+  }
+}
+
+@keyframes menuCloseIconAnimation {
+  0% {
+    width: 12px;
+  }
+  20% {
+    width: 4px;
+  }
+  80% {
+    width: 15px;
+  }
+  100% {
+    width: 12px;
   }
 }
 
