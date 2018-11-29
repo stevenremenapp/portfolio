@@ -333,23 +333,58 @@ body {
 }
 
 .menu-closed-icon {
+  display: none;
   position: fixed;
   height: 40px;
   width: 40px;
-  top: 50px;
-  right: 50px;
-  opacity: 0.8;
+  top: 20px;
+  right: 20px;
   background: pink;
+  z-index: 3;
 }
 
 .menu-closed-icon:hover {
-  opacity: 1;
   cursor: pointer;
 }
 
 .menu-closed-icon:hover .menu-closed-x {
   -webkit-animation: menuCloseIconAnimation 1.5s ease-in-out infinite;
           animation: menuCloseIconAnimation 1.5s ease-in-out infinite;
+}
+
+.menu-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.menu {
+  display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  width: 200px;
+  height: 300px;
+  top: 40px;
+  right: 40px;
+  background: #fff;
+  border: 2px solid #000;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 5px 20px;
+  z-index: 2;
 }
 
 @-webkit-keyframes nameGrow {
