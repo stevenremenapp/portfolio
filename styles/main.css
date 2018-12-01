@@ -387,6 +387,151 @@ body {
   z-index: 2;
 }
 
+.contact-widget {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+}
+
+.contact-widget:hover {
+  cursor: pointer;
+}
+
+.contact-widget .home {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  background: red;
+  border-radius: 50%;
+  opacity: 0.7;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.contact-widget .home.active {
+  background: salmon;
+}
+
+.contact-widget .email {
+  position: fixed;
+  opacity: 0;
+  z-index: -1;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  background: blue;
+  border-radius: 50%;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.contact-widget .email.active {
+  -webkit-transform: translateY(-70px);
+          transform: translateY(-70px);
+  opacity: 0.7;
+}
+
+.contact-widget .github {
+  position: fixed;
+  opacity: 0;
+  z-index: -1;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  background: gray;
+  border-radius: 50%;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.contact-widget .github.active {
+  -webkit-transform: translateY(-140px);
+          transform: translateY(-140px);
+  opacity: 0.7;
+}
+
+.contact-widget .linkedin {
+  position: fixed;
+  opacity: 0;
+  z-index: -1;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  background: purple;
+  border-radius: 50%;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.contact-widget .linkedin.active {
+  -webkit-transform: translateY(-210px);
+          transform: translateY(-210px);
+  opacity: 0.7;
+}
+
+.tooltip {
+  position: relative;
+}
+
+.tooltip:hover .tooltip-content {
+  cursor: default;
+  opacity: 0.8;
+}
+
+.tooltip:hover .tooltip-content:hover {
+  opacity: 0;
+}
+
+.tooltip .tooltip-content {
+  background: #343633;
+  border-radius: 10px 0 0 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #fff;
+  font-size: 18px;
+  line-height: 30px;
+  min-width: 100px;
+  min-height: 30px;
+  text-align: center;
+  padding: 5px;
+  position: absolute;
+  opacity: 0;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
+.tooltip .tooltip-content::after {
+  content: '';
+  height: 0;
+  width: 0;
+  border-left: 19px solid transparent;
+  border-right: 19px solid transparent;
+  border-top: 19px solid #343633;
+  position: absolute;
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
+}
+
+.tooltip.left .tooltip-content {
+  right: calc(100% + 26px);
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.tooltip.left .tooltip-content::after {
+  right: -29px;
+  margin-top: -9px;
+  top: 50%;
+}
+
 @-webkit-keyframes nameGrow {
   0% {
     -webkit-transform: scale(0.1);

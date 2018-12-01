@@ -42,3 +42,21 @@ overlay.addEventListener('click', function() {
     menu.style.display = "none";
     overlay.style.display = "none";
 });
+
+// CONTACT WIDGET
+
+let contactWidget = document.querySelector('.contact-widget');
+
+contactWidget.addEventListener('click', function() {
+    contactWidget.classList.toggle('active');
+    if (contactWidget.classList.contains('active')) {
+        for (let i = 0; i < contactWidget.children.length; i++) {
+            contactWidget.children[i].classList.add('active');
+        }
+    }
+    if (!contactWidget.classList.contains('active')) {
+        for (let i = 0; i < contactWidget.children.length; i++) {
+            contactWidget.children[i].classList.remove('active');
+        }
+    }
+});
