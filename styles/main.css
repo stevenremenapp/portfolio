@@ -265,6 +265,7 @@ body {
 }
 
 .hero-left h1 {
+  position: fixed;
   color: #000;
   font-family: 'DDCHardware', sans-serif;
   font-size: 90px;
@@ -292,6 +293,15 @@ body {
 .hero-right {
   width: 50vw;
   padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .hero-right h2 {
@@ -317,21 +327,6 @@ body {
   cursor: pointer;
 }
 
-.menu-icon:hover #menu-top {
-  -webkit-animation: menuIconAnimation 1.5s ease-in-out infinite;
-          animation: menuIconAnimation 1.5s ease-in-out infinite;
-}
-
-.menu-icon:hover #menu-middle {
-  -webkit-animation: menuIconAnimation 1.5s ease-in-out 300ms infinite;
-          animation: menuIconAnimation 1.5s ease-in-out 300ms infinite;
-}
-
-.menu-icon:hover #menu-bottom {
-  -webkit-animation: menuIconAnimation 1.5s ease-in-out 500ms infinite;
-          animation: menuIconAnimation 1.5s ease-in-out 500ms infinite;
-}
-
 .menu-closed-icon {
   display: none;
   position: fixed;
@@ -345,11 +340,6 @@ body {
 
 .menu-closed-icon:hover {
   cursor: pointer;
-}
-
-.menu-closed-icon:hover .menu-closed-x {
-  -webkit-animation: menuCloseIconAnimation 1.5s ease-in-out infinite;
-          animation: menuCloseIconAnimation 1.5s ease-in-out infinite;
 }
 
 .menu-overlay {
@@ -563,6 +553,23 @@ body {
   top: 50%;
 }
 
+.homepage-text {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  width: 80%;
+  font-size: 16px;
+}
+
+.homepage-text p {
+  margin-bottom: 2rem;
+  letter-spacing: 1px;
+}
+
+.intro-statement-text {
+  font-weight: 600;
+  font-size: 20px;
+}
+
 @-webkit-keyframes nameGrow {
   0% {
     -webkit-transform: scale(0.1);
@@ -664,36 +671,6 @@ body {
 .animatedLetter {
   -webkit-animation: nameLetterAnimation 3s;
           animation: nameLetterAnimation 3s;
-}
-
-@-webkit-keyframes menuIconAnimation {
-  0% {
-    width: 30px;
-  }
-  20% {
-    width: 4px;
-  }
-  80% {
-    width: 32px;
-  }
-  100% {
-    width: 30px;
-  }
-}
-
-@keyframes menuIconAnimation {
-  0% {
-    width: 30px;
-  }
-  20% {
-    width: 4px;
-  }
-  80% {
-    width: 32px;
-  }
-  100% {
-    width: 30px;
-  }
 }
 
 @-webkit-keyframes menuCloseIconAnimation {

@@ -43,6 +43,26 @@ overlay.addEventListener('click', function() {
     overlay.style.display = "none";
 });
 
+menuBtn.addEventListener('mouseover', function() {
+    TweenMax.to("#menu-top", 0.75, {attr:{width:18}, repeat:-1, yoyo:true});
+    TweenMax.to("#menu-middle", 0.75, {attr:{width:12}, repeat:-1, yoyo:true});
+    TweenMax.to("#menu-bottom", 0.75, {attr:{width:4}, repeat:-1, yoyo:true});
+});
+
+menuBtn.addEventListener('mouseout', function() {
+    TweenMax.to("#menu-top", 0.25, {attr:{width:30}});
+    TweenMax.to("#menu-middle", 0.25, {attr:{width:30}});
+    TweenMax.to("#menu-bottom", 0.25, {attr:{width:30}});
+});
+
+menuCloseBtn.addEventListener('mouseover', function() {
+    TweenMax.to('.menu-closed-x', 0.75, {attr:{width:4}, repeat:-1, yoyo:true, ease: Power2.easeInOut});
+});
+
+menuCloseBtn.addEventListener('mouseout', function() {
+    TweenMax.to('.menu-closed-x', 0.25, {attr:{width:12}});
+});
+
 // CONTACT WIDGET
 
 let contactWidget = document.querySelector('.contact-widget');
