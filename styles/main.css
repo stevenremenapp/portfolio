@@ -29,41 +29,26 @@ body {
   position: fixed;
 }
 
-.frame-0 {
-  border: solid transparent;
-  -o-border-image: linear-gradient(to left, #61c69d 0%, #2d72bc 100%);
-     border-image: -webkit-gradient(linear, right top, left top, from(#61c69d), to(#2d72bc));
-     border-image: linear-gradient(to left, #61c69d 0%, #2d72bc 100%);
-  border-image-slice: 1;
-  border-width: 20px;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  width: calc(50vw - 19px);
-}
-
 .mobile-frame-0 {
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-  border: solid transparent;
+  border: 20px solid;
   -o-border-image: linear-gradient(to left, #61c69d 0%, #2d72bc 100%);
      border-image: -webkit-gradient(linear, right top, left top, from(#61c69d), to(#2d72bc));
      border-image: linear-gradient(to left, #61c69d 0%, #2d72bc 100%);
   border-image-slice: 1;
-  border-width: 20px;
   z-index: -1;
   display: none;
 }
 
 .mobile-frame-1 {
-  border: solid transparent;
+  border: 20px solid;
   -o-border-image: linear-gradient(to right, #b861c6 0%, #ffc7c7 100%);
      border-image: -webkit-gradient(linear, left top, right top, from(#b861c6), to(#ffc7c7));
      border-image: linear-gradient(to right, #b861c6 0%, #ffc7c7 100%);
   border-image-slice: 1;
-  border-width: 20px;
   top: 20px;
   bottom: 20px;
   left: 20px;
@@ -72,13 +57,24 @@ body {
   display: none;
 }
 
+.frame-0 {
+  border: 20px solid;
+  -o-border-image: linear-gradient(to left, #61c69d 0%, #2d72bc 100%);
+     border-image: -webkit-gradient(linear, right top, left top, from(#61c69d), to(#2d72bc));
+     border-image: linear-gradient(to left, #61c69d 0%, #2d72bc 100%);
+  border-image-slice: 1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: calc(50vw - 19px);
+}
+
 .frame-1 {
-  border: solid transparent;
+  border: 20px solid;
   -o-border-image: linear-gradient(to right, #b861c6 0%, #ffc7c7 100%);
      border-image: -webkit-gradient(linear, left top, right top, from(#b861c6), to(#ffc7c7));
      border-image: linear-gradient(to right, #b861c6 0%, #ffc7c7 100%);
   border-image-slice: 1;
-  border-width: 20px;
   top: 20px;
   bottom: 20px;
   left: 20px;
@@ -86,12 +82,11 @@ body {
 }
 
 .frame-2 {
-  border: solid transparent;
+  border: 20px solid;
   -o-border-image: linear-gradient(to left, #2e98bc 0%, #c66262 100%);
      border-image: -webkit-gradient(linear, right top, left top, from(#2e98bc), to(#c66262));
      border-image: linear-gradient(to left, #2e98bc 0%, #c66262 100%);
   border-image-slice: 1;
-  border-width: 20px;
   top: 40px;
   bottom: 40px;
   left: 40px;
@@ -99,7 +94,7 @@ body {
 }
 
 .frame-3 {
-  border: solid transparent;
+  border: 20px solid;
   -o-border-image: linear-gradient(to right, #aa076b, #61045f);
      border-image: -webkit-gradient(linear, left top, right top, from(#aa076b), to(#61045f));
      border-image: linear-gradient(to right, #aa076b, #61045f);
@@ -592,7 +587,7 @@ body {
   display: none;
   position: relative;
   top: -8px;
-  left: -10px;
+  left: -12px;
   color: #000;
   font-family: 'DDCHardware', sans-serif;
   font-size: 46px;
