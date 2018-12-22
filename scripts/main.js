@@ -68,7 +68,7 @@ menuCloseBtn.addEventListener('mouseout', function() {
 let contactWidget = document.querySelector('.contact-widget');
 
 contactWidget.addEventListener('click', function(event) {
-    if (event.target.classList.contains('home') || event.target.classList.contains('fas')) {
+    if (event.target.classList.contains('home') || event.target.classList.contains('fas') || event.target.classList.contains('contact-widget')) {
         contactWidget.classList.toggle('active');
     }
     if (contactWidget.classList.contains('active')) {
