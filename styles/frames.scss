@@ -1,3 +1,5 @@
+// --- HOMEPAGE FRAMES --- //
+
 .frame-0 {
     border: 20px solid;
     border-image: linear-gradient(to left, #61c69d 0%, #2d72bc 100%);
@@ -180,7 +182,7 @@
 //   }
 
 
-// FRAME WIDTH MEDIA QUERIES //
+// HOMEPAGE - FRAME WIDTH MEDIA QUERIES //
 
 @media screen and (max-width: 1510px) {
     .frame-16 {
@@ -272,7 +274,7 @@
     }
 }
 
-// FRAME HEIGHT MEDIA QUERIES //
+// HOMEPAGE - FRAME HEIGHT MEDIA QUERIES //
 
 @media screen and (max-height: 725px) {
     .frame-16 {
@@ -361,5 +363,44 @@
 @media screen and (max-height: 180px) {
     .frame-2 {
         display: none;
+    }
+}
+
+// --- PROJECTS FRAMES --- //
+
+.projects-frame-0 {
+    border: 20px solid;
+    border-image: linear-gradient(to left, #2e98bc 0%, #c66262 100%);
+    border-image-slice: 1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    opacity: 0.8;
+    &:hover {
+        border-width: 40px;
+    }
+    &:hover + div {
+        opacity: 0;
+    }
+}
+
+.projects-frame-1 {
+    border: 20px solid;
+    border-image: linear-gradient(to right, #aa076b, #61045f);
+    border-image-slice: 1;
+    top: 20px;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    z-index: -1;
+    opacity: 0.8;
+    &:hover {
+        border-width: 40px;
+        // top: 0;
+        // bottom: 0;
+        // left: 0;
+        // right: 0;
     }
 }

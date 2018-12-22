@@ -4,14 +4,14 @@
 //     console.log(event.target);
 // });
 
-let nameLetter = document.getElementsByClassName('name-letter');
+let animationLetter = document.getElementsByClassName('animation-letter');
 
-for (let i = 0; i < nameLetter.length; i++) {
-    nameLetter[i].addEventListener('mouseover', function() {
-        nameLetter[i].classList.add('animatedLetter');
+for (let i = 0; i < animationLetter.length; i++) {
+    animationLetter[i].addEventListener('mouseover', function() {
+        animationLetter[i].classList.add('animatedLetter');
     });
-    nameLetter[i].addEventListener('animationend', function() {
-        nameLetter[i].classList.remove('animatedLetter');
+    animationLetter[i].addEventListener('animationend', function() {
+        animationLetter[i].classList.remove('animatedLetter');
     });
 }
 

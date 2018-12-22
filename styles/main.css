@@ -44,6 +44,11 @@ body {
   background: linear-gradient(to right, #ece9e6, #ffffff);
 }
 
+.interior-page-body {
+  width: calc(100vw - 100px);
+  margin: 40px auto;
+}
+
 .hero-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -122,8 +127,8 @@ body {
   position: fixed;
   height: 40px;
   width: 40px;
-  top: 20px;
-  right: 20px;
+  top: 40px;
+  right: 40px;
   opacity: 0.8;
 }
 
@@ -137,8 +142,8 @@ body {
   position: fixed;
   height: 40px;
   width: 40px;
-  top: 20px;
-  right: 20px;
+  top: 40px;
+  right: 40px;
   background: pink;
   z-index: 3;
 }
@@ -172,8 +177,8 @@ body {
   position: fixed;
   width: 200px;
   height: 300px;
-  top: 40px;
-  right: 40px;
+  top: 60px;
+  right: 60px;
   background: #fff;
   border: 2px solid #000;
   -webkit-box-sizing: border-box;
@@ -184,8 +189,8 @@ body {
 
 .contact-widget {
   position: fixed;
-  bottom: 20px;
-  right: 20px;
+  bottom: 40px;
+  right: 40px;
   width: 60px;
   height: 60px;
 }
@@ -200,8 +205,8 @@ body {
 
 .contact-widget .home {
   position: fixed;
-  bottom: 20px;
-  right: 20px;
+  bottom: 40px;
+  right: 40px;
   width: 60px;
   height: 60px;
   line-height: 60px;
@@ -209,9 +214,8 @@ body {
   font-size: 30px;
   background: orange;
   border-radius: 50%;
-  opacity: 0.7;
-  -webkit-transition: all 1s;
-  transition: all 1s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 .contact-widget .home i.fa-times {
@@ -237,8 +241,8 @@ body {
   position: fixed;
   opacity: 0;
   z-index: -1;
-  bottom: 20px;
-  right: 20px;
+  bottom: 40px;
+  right: 40px;
   width: 60px;
   height: 60px;
   line-height: 60px;
@@ -246,22 +250,22 @@ body {
   font-size: 30px;
   background: blue;
   border-radius: 50%;
-  -webkit-transition: all 1s;
-  transition: all 1s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 .contact-widget .email.active {
   -webkit-transform: translateY(-70px);
           transform: translateY(-70px);
-  opacity: 0.7;
+  opacity: 1;
 }
 
 .contact-widget .github {
   position: fixed;
   opacity: 0;
   z-index: -1;
-  bottom: 20px;
-  right: 20px;
+  bottom: 40px;
+  right: 40px;
   width: 60px;
   height: 60px;
   line-height: 60px;
@@ -269,22 +273,22 @@ body {
   font-size: 34px;
   background: gray;
   border-radius: 50%;
-  -webkit-transition: all 1s;
-  transition: all 1s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 .contact-widget .github.active {
   -webkit-transform: translateY(-140px);
           transform: translateY(-140px);
-  opacity: 0.7;
+  opacity: 1;
 }
 
 .contact-widget .linkedin {
   position: fixed;
   opacity: 0;
   z-index: -1;
-  bottom: 20px;
-  right: 20px;
+  bottom: 40px;
+  right: 40px;
   width: 60px;
   height: 60px;
   line-height: 60px;
@@ -292,14 +296,14 @@ body {
   font-size: 30px;
   background: purple;
   border-radius: 50%;
-  -webkit-transition: all 1s;
-  transition: all 1s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 .contact-widget .linkedin.active {
   -webkit-transform: translateY(-210px);
           transform: translateY(-210px);
-  opacity: 0.7;
+  opacity: 1;
 }
 
 .tooltip {
@@ -311,11 +315,8 @@ body {
   opacity: 0.8;
 }
 
-.tooltip:hover .tooltip-content:hover {
-  opacity: 0;
-}
-
 .tooltip .tooltip-content {
+  z-index: 10;
   background: #343633;
   border-radius: 10px 0 0 10px;
   -webkit-box-sizing: border-box;
@@ -329,8 +330,8 @@ body {
   padding: 5px;
   position: absolute;
   opacity: 0;
-  -webkit-transition: all 1s ease-in-out;
-  transition: all 1s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .tooltip .tooltip-content::after {
@@ -496,25 +497,79 @@ body {
           animation: nameLetterAnimation 3s;
 }
 
+.cntr {
+  max-width: 80%;
+  margin: auto;
+  text-align: center;
+}
+
+.cntr h1 {
+  font-family: 'DDCHardware', sans-serif;
+  font-size: 90px;
+  display: inline-block;
+  margin: 10px auto 0 auto;
+  z-index: 2;
+  letter-spacing: -13px;
+  line-height: 0.8;
+  -webkit-animation: nameGrow 3s;
+          animation: nameGrow 3s;
+}
+
+.cntr h1 span {
+  display: inline-block;
+}
+
+.cntr h1:after {
+  content: '';
+  display: block;
+  position: relative;
+  width: 100%;
+  border-bottom: 20px solid;
+  -o-border-image: linear-gradient(to right, #aa076b, #61045f);
+     border-image: -webkit-gradient(linear, left top, right top, from(#aa076b), to(#61045f));
+     border-image: linear-gradient(to right, #aa076b, #61045f);
+  border-image-slice: 1;
+  z-index: -2;
+  margin-top: -17px;
+  margin-left: 7px;
+  opacity: 0.8;
+}
+
 .project-grid-container {
-  background: #777;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 10% 15%  10% 10% 10% 20% 10% 5% 10%;
-      grid-template-columns: 10% 15%  10% 10% 10% 20% 10% 5% 10%;
-  -ms-grid-rows: 50px 50px 100px 50px 100px 100px 125px 100px 50px;
-      grid-template-rows: 50px 50px 100px 50px 100px 100px 125px 100px 50px;
-  max-width: 900px;
-  margin: 0 auto;
+  -ms-grid-columns: (1fr)[10];
+      grid-template-columns: repeat(10, 1fr);
+  -ms-grid-rows: (1fr)[8];
+      grid-template-rows: repeat(8, 1fr);
+  max-width: 1000px;
+  max-height: 700px;
+  margin: 50px 0;
+  padding: 50px;
+}
+
+.project-grid-container:after {
+  content: '';
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 7;
+  grid-column: 4 / 11;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2 / 3;
+  border-radius: 12px;
+  z-index: -3;
+  -webkit-box-shadow: 0px 35px 27px -20px rgba(0, 0, 0, 0.2), 0px 3px 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 35px 27px -20px rgba(0, 0, 0, 0.2), 0px 3px 20px rgba(0, 0, 0, 0.1);
 }
 
 .project-image {
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 5;
-  grid-column: 2 / 7;
-  -ms-grid-row: 2;
-  -ms-grid-row-span: 5;
-  grid-row: 2 / 7;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 7;
+  grid-column: 1 / 8;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 6;
+  grid-row: 1 / 7;
+  z-index: -2;
 }
 
 .project-image img {
@@ -523,28 +578,83 @@ body {
      object-fit: cover;
   width: 100%;
   height: 100%;
+  -webkit-box-shadow: 0px 35px 27px -20px rgba(0, 0, 0, 0.2), 0px 3px 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 35px 27px -20px rgba(0, 0, 0, 0.2), 0px 3px 20px rgba(0, 0, 0, 0.1);
 }
 
 .project-title {
-  -ms-grid-column: 3;
-  -ms-grid-column-span: 5;
-  grid-column: 3 / 8;
-  -ms-grid-row: 3;
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 7;
+  grid-column: 4 / 11;
+  -ms-grid-row: 2;
   -ms-grid-row-span: 1;
-  grid-row: 3 / 4;
+  grid-row: 2 / 3;
   background: yellow;
   border-radius: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .project-desc {
-  -ms-grid-column: 4;
-  -ms-grid-column-span: 5;
-  grid-column: 4 / 9;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 7;
+  grid-column: 3 / 10;
   -ms-grid-row: 5;
   -ms-grid-row-span: 4;
   grid-row: 5 / 9;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(240, 11, 202, 0.9);
   border-radius: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: left;
+  padding: 20px;
+  padding-bottom: 2.5px;
+  -webkit-box-shadow: 0px 35px 27px -20px rgba(0, 0, 0, 0.2), 0px 3px 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 35px 27px -20px rgba(0, 0, 0, 0.2), 0px 3px 20px rgba(0, 0, 0, 0.1);
+}
+
+.project-desc p {
+  margin: 0;
+}
+
+.project-desc .icons {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin-right: -25px;
+  width: 90px;
+  height: 40px;
+}
+
+.project-desc .icons a {
+  text-decoration: none;
+  color: #000;
+}
+
+.project-desc .icons i {
+  height: 40px;
+  width: 40px;
+  font-size: 35px;
+}
+
+.project-desc .icons i + i {
+  height: 40px;
+  width: 40px;
+  font-size: 30px;
 }
 
 @media screen and (max-width: 1100px) {
@@ -565,6 +675,10 @@ body {
   .hero-left h1 {
     font-size: 60px;
     letter-spacing: -8.5px;
+  }
+  .project-image img {
+    max-width: 100%;
+    max-height: 75%;
   }
 }
 
@@ -599,11 +713,12 @@ body {
   }
   .project-desc {
     -ms-grid-column: 3;
-    -ms-grid-column-span: 5;
-    grid-column: 3 / 8;
-    -ms-grid-row: 6;
-    -ms-grid-row-span: 3;
-    grid-row: 6 / 9;
+    -ms-grid-column-span: 6;
+    grid-column: 3 / 9;
+  }
+  .project-image img {
+    max-width: 100%;
+    max-height: 55%;
   }
 }
 /*# sourceMappingURL=main.css.map */
