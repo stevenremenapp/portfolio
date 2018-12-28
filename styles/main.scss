@@ -452,7 +452,6 @@ body {
 // --- PROJECTS PAGE --- //
 
 .cntr {
-  max-width: 80%;
   margin: auto;
   text-align: center;
   h1 {
@@ -471,14 +470,56 @@ body {
       content: '';
       display: block;
       position: relative;
-      width: 100%;
+      width: 102%;
       border-bottom: 20px solid;
       border-image: linear-gradient(to right, #aa076b, #61045f);
       border-image-slice: 1;
       z-index: -2;
       margin-top: -17px;
-      margin-left: 7px;
+      margin-left: 3px;
       opacity: 0.8;
+    }
+  }
+}
+
+.non-library-projects {
+  display: none;
+}
+
+.projects-display-option {
+  overflow: hidden;
+  text-align: center;
+  margin: 50px 155px;
+  span {
+    position: relative;
+    &:hover {
+      cursor: pointer;
+    }
+    &:before,
+    &:after {
+      content: '';
+      position: absolute;
+      border-bottom: 6px solid;
+      border-image: linear-gradient(to right, #aa076b, #61045f);
+      border-image-slice: 1;
+      z-index: -2;
+      width: 325px;
+      top: 50%;
+      margin-top: -2.5px;
+    }
+    &:before {
+      right: 100%;
+      margin-right: 15px;
+    }
+    &:after {
+      left: 100%;
+      margin-left: 15px;
+    }
+    &:first-of-type:after {
+      display: none;
+    }
+    &:last-of-type:before {
+      display: none;
     }
   }
 }
@@ -492,7 +533,7 @@ body {
   // height: 750px;
   max-height: 700px;
   margin: 50px auto;
-  padding: 50px;
+  padding: 20px;
   // ALLOWS THE BOX SHADOW TO BE UNDER THE IMAGE RATHER THAN ON/ABOVE IT
   &:after {
     content: '';
@@ -509,7 +550,7 @@ body {
   grid-row: 1 / 7;
   z-index: -2;
   img {
-    border-radius: 12px;
+    border-radius: 6px;
     object-fit: cover;
     width: 100%;
     height: 100%;
@@ -522,7 +563,7 @@ body {
   grid-column: 4 / 11;
   grid-row: 2 / 3;
   background: yellow;
-  border-radius: 12px;
+  border-radius: 6px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -532,7 +573,7 @@ body {
   grid-column: 3 / 10;
   grid-row: 5 / 9;
   background: rgba(240, 11, 202, 0.9);
-  border-radius: 12px;
+  border-radius: 6px;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
@@ -608,6 +649,12 @@ body {
       letter-spacing: -7.5px;
     }
   }
+  .cntr {
+    h1 {
+      font-size: 75px;
+      letter-spacing: -11px;
+    }
+  }
 }
 
 @media screen and (max-width: 565px) {
@@ -627,17 +674,39 @@ body {
       }
     }
   }
+  .cntr {
+    h1 {
+      font-size: 65px;
+      letter-spacing: -10px;
+    }
+  }
   .project-title {
-    grid-column: 3 / 9;
+    // grid-column: 3 / 10;
   }
   .project-desc {
-    grid-column: 3 / 9;
+    // grid-column: 3 / 9;
   }
   .project-image {
     img {
       // KEEPS IMG FROM STRETCHING THE FULL HEIGHT OF DEFINED GRID ROW SPECS ABOVE
       max-width: 100%;
       max-height: 55%;
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .cntr {
+    text-align: left;
+    h1 {
+      text-align: left;
+      font-size: 40px;
+      margin: 5px auto 0 auto;
+      letter-spacing: -6px;
+      &:after {
+        border-bottom: 10px solid;
+        margin-top: -10px;
+      }
     }
   }
 }

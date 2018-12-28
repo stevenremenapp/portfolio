@@ -82,3 +82,34 @@ contactWidget.addEventListener('click', function(event) {
         }
     }
 });
+
+// PROJECT PAGE DISPLAY OPTION
+
+let libraryProjectsSelector = document.getElementById('projects-library');
+let nonLibraryProjectsSelector = document.getElementById('projects-non-library');
+let libraryProjectsDisplay = document.getElementById('library-projects');
+let nonLibraryProjectsDisplay = document.getElementById('non-library-projects');
+
+libraryProjectsSelector.addEventListener('click', function() {
+    libraryProjectsDisplay.style.display = "block";
+    nonLibraryProjectsDisplay.style.display = "none";
+});
+
+nonLibraryProjectsSelector.addEventListener('click', function() {
+    libraryProjectsDisplay.style.display = "none";
+    nonLibraryProjectsDisplay.style.display = "block";
+});
+
+libraryProjectsSelector.addEventListener('keydown', function(event) {
+    if (event.keyCode === 13) {
+        libraryProjectsDisplay.style.display = "block";
+        nonLibraryProjectsDisplay.style.display = "none";
+    }
+});
+
+nonLibraryProjectsSelector.addEventListener('keydown', function(event) {
+    if (event.keyCode === 13) {
+        libraryProjectsDisplay.style.display = "none";
+        nonLibraryProjectsDisplay.style.display = "block";
+    }
+});
