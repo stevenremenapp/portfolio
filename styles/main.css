@@ -522,44 +522,54 @@ body {
           animation: nameLetterAnimation 3s;
 }
 
-@-webkit-keyframes fadeInFromNone {
+@-webkit-keyframes slideInFromLeft {
   0% {
-    display: none;
-    opacity: 0;
-  }
-  1% {
-    display: block;
-    opacity: 0;
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
   }
   100% {
-    display: block;
-    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
 }
 
-@keyframes fadeInFromNone {
+@keyframes slideInFromLeft {
   0% {
-    display: none;
-    opacity: 0;
-  }
-  1% {
-    display: block;
-    opacity: 0;
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
   }
   100% {
-    display: block;
-    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
 }
 
-.fadeIn {
-  -webkit-animation: fadeInFromNone 3s;
-          animation: fadeInFromNone 3s;
+@-webkit-keyframes slideOutToLeft {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+}
+
+@keyframes slideOutToLeft {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
 }
 
 .cntr {
   margin: auto;
   text-align: center;
+  overflow: hidden;
 }
 
 .cntr h1 {
@@ -594,22 +604,37 @@ body {
   opacity: 0.8;
 }
 
+.projects-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 #library-projects,
 #non-library-projects {
-  -webkit-transition: all 0.7s ease-in-out;
-  transition: all 0.7s ease-in-out;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
 }
 
-#library-projects.hidden {
-  opacity: 0;
-  height: 0;
-  overflow: hidden;
+#library-projects.showProjects {
+  -webkit-animation: slideInFromLeft 1s forwards;
+          animation: slideInFromLeft 1s forwards;
 }
 
-#non-library-projects.hidden {
-  opacity: 0;
-  height: 0;
-  overflow: hidden;
+#library-projects.hideProjects {
+  -webkit-animation: slideOutToLeft 1s forwards;
+          animation: slideOutToLeft 1s forwards;
+}
+
+#non-library-projects.showProjects {
+  -webkit-animation: slideOutToLeft 1s forwards;
+          animation: slideOutToLeft 1s forwards;
+}
+
+#non-library-projects.hideProjects {
+  -webkit-animation: slideInFromLeft 1s forwards;
+          animation: slideInFromLeft 1s forwards;
 }
 
 .projects-display-option {
@@ -692,7 +717,6 @@ body {
   -ms-grid-row: 1;
   -ms-grid-row-span: 6;
   grid-row: 1 / 7;
-  z-index: -2;
 }
 
 .project-image img {

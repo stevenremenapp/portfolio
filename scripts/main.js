@@ -93,17 +93,26 @@ let nonLibraryProjectsDisplay = document.getElementById('non-library-projects');
 libraryProjectsSelector.addEventListener('click', function() {
     // libraryProjectsDisplay.style.display = "block";
     // nonLibraryProjectsDisplay.style.display = "none";
-    nonLibraryProjectsDisplay.classList.add('hidden');
-    libraryProjectsDisplay.classList.remove('hidden');
+    // nonLibraryProjectsDisplay.classList.add('hidden');
+    // libraryProjectsDisplay.classList.remove('hidden');
     // libraryProjectsDisplay.classList.add('fadeIn');
+    // nonLibraryProjectsDisplay.classList.add('hidden');
+    libraryProjectsDisplay.classList.remove('hideProjects');
+    libraryProjectsDisplay.classList.add('showProjects');
+    nonLibraryProjectsDisplay.classList.remove('showProjects');
+    nonLibraryProjectsDisplay.classList.add('hideProjects');
 });
 
 nonLibraryProjectsSelector.addEventListener('click', function() {
     // libraryProjectsDisplay.style.display = "none";
     // nonLibraryProjectsDisplay.style.display = "block";
-    libraryProjectsDisplay.classList.add('hidden');
-    nonLibraryProjectsDisplay.classList.remove('hidden');
+    // libraryProjectsDisplay.classList.add('hidden');
+    // nonLibraryProjectsDisplay.classList.remove('hidden');
     // nonLibraryProjectsDisplay.classList.add('fadeIn');
+    libraryProjectsDisplay.classList.add('hideProjects');
+    libraryProjectsDisplay.classList.remove('showProjects');
+    nonLibraryProjectsDisplay.classList.add('showProjects');
+    nonLibraryProjectsDisplay.classList.remove('hideProjects');
 });
 
 libraryProjectsSelector.addEventListener('keydown', function(event) {

@@ -448,23 +448,22 @@ body {
 //   }
 // }
 
-@keyframes fadeInFromNone {
+@keyframes slideInFromLeft {
   0% {
-    display: none;
-    opacity: 0;
-  }
-  1% {
-    display: block;
-    opacity: 0;
+    transform: translateX(-100%);
   }
   100% {
-    display: block;
-    opacity: 1;
+    transform: translateX(0);
   }
 }
 
-.fadeIn {
-  animation: fadeInFromNone 3s;
+@keyframes slideOutToLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }
 
 
@@ -473,6 +472,7 @@ body {
 .cntr {
   margin: auto;
   text-align: center;
+  overflow: hidden;
   h1 {
     font-family: 'DDCHardware', sans-serif;
     font-size: 90px;
@@ -501,26 +501,29 @@ body {
   }
 }
 
+.projects-container {
+  display: flex;
+}
+
 #library-projects,
 #non-library-projects {
-  // display: block;
-  // opacity: 1;
-  // height: auto;
-  transition: all 0.7s ease-in-out;
+  flex: 0 0 100%;
 }
 
-#library-projects.hidden {
-  // display: none;
-  opacity: 0;
-  height: 0;
-  overflow: hidden;
+#library-projects.showProjects {
+  animation: slideInFromLeft 1s forwards;
 }
 
-#non-library-projects.hidden {
-  // display: none;
-  opacity: 0;
-  height: 0;
-  overflow: hidden;
+#library-projects.hideProjects {
+  animation: slideOutToLeft 1s forwards;
+}
+
+#non-library-projects.showProjects {
+  animation: slideOutToLeft 1s forwards;
+}
+
+#non-library-projects.hideProjects {
+  animation: slideInFromLeft 1s forwards;
 }
 
 .projects-display-option {
@@ -585,7 +588,7 @@ body {
 .project-image {
   grid-column: 1 / 8;
   grid-row: 1 / 7;
-  z-index: -2;
+  // z-index: -2;
   img {
     border-radius: 6px;
     object-fit: cover;
