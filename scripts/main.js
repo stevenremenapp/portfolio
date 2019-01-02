@@ -91,13 +91,19 @@ let libraryProjectsDisplay = document.getElementById('library-projects');
 let nonLibraryProjectsDisplay = document.getElementById('non-library-projects');
 
 libraryProjectsSelector.addEventListener('click', function() {
-    libraryProjectsDisplay.style.display = "block";
-    nonLibraryProjectsDisplay.style.display = "none";
+    // libraryProjectsDisplay.style.display = "block";
+    // nonLibraryProjectsDisplay.style.display = "none";
+    nonLibraryProjectsDisplay.classList.add('hidden');
+    libraryProjectsDisplay.classList.remove('hidden');
+    // libraryProjectsDisplay.classList.add('fadeIn');
 });
 
 nonLibraryProjectsSelector.addEventListener('click', function() {
-    libraryProjectsDisplay.style.display = "none";
-    nonLibraryProjectsDisplay.style.display = "block";
+    // libraryProjectsDisplay.style.display = "none";
+    // nonLibraryProjectsDisplay.style.display = "block";
+    libraryProjectsDisplay.classList.add('hidden');
+    nonLibraryProjectsDisplay.classList.remove('hidden');
+    // nonLibraryProjectsDisplay.classList.add('fadeIn');
 });
 
 libraryProjectsSelector.addEventListener('keydown', function(event) {

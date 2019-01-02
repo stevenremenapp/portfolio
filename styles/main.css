@@ -522,6 +522,41 @@ body {
           animation: nameLetterAnimation 3s;
 }
 
+@-webkit-keyframes fadeInFromNone {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+  1% {
+    display: block;
+    opacity: 0;
+  }
+  100% {
+    display: block;
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInFromNone {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+  1% {
+    display: block;
+    opacity: 0;
+  }
+  100% {
+    display: block;
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  -webkit-animation: fadeInFromNone 3s;
+          animation: fadeInFromNone 3s;
+}
+
 .cntr {
   margin: auto;
   text-align: center;
@@ -559,8 +594,22 @@ body {
   opacity: 0.8;
 }
 
-.non-library-projects {
-  display: none;
+#library-projects,
+#non-library-projects {
+  -webkit-transition: all 0.7s ease-in-out;
+  transition: all 0.7s ease-in-out;
+}
+
+#library-projects.hidden {
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+}
+
+#non-library-projects.hidden {
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
 }
 
 .projects-display-option {
@@ -618,7 +667,7 @@ body {
       grid-template-rows: repeat(8, 1fr);
   max-width: 1000px;
   max-height: 700px;
-  margin: 50px auto;
+  margin: 0 auto;
   padding: 20px;
 }
 

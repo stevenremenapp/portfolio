@@ -448,6 +448,25 @@ body {
 //   }
 // }
 
+@keyframes fadeInFromNone {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+  1% {
+    display: block;
+    opacity: 0;
+  }
+  100% {
+    display: block;
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  animation: fadeInFromNone 3s;
+}
+
 
 // --- PROJECTS PAGE --- //
 
@@ -482,8 +501,26 @@ body {
   }
 }
 
-.non-library-projects {
-  display: none;
+#library-projects,
+#non-library-projects {
+  // display: block;
+  // opacity: 1;
+  // height: auto;
+  transition: all 0.7s ease-in-out;
+}
+
+#library-projects.hidden {
+  // display: none;
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+}
+
+#non-library-projects.hidden {
+  // display: none;
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
 }
 
 .projects-display-option {
@@ -532,7 +569,7 @@ body {
   max-width: 1000px;
   // height: 750px;
   max-height: 700px;
-  margin: 50px auto;
+  margin: 0 auto;
   padding: 20px;
   // ALLOWS THE BOX SHADOW TO BE UNDER THE IMAGE RATHER THAN ON/ABOVE IT
   &:after {
