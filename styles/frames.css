@@ -427,4 +427,44 @@
 .projects-frame-1:hover {
   border-width: 40px;
 }
+
+.contact-frame-0 {
+  border: 20px solid;
+  -o-border-image: linear-gradient(to right, #e65c00, #f9d423);
+     border-image: -webkit-gradient(linear, left top, right top, from(#e65c00), to(#f9d423));
+     border-image: linear-gradient(to right, #e65c00, #f9d423);
+  border-image-slice: 1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  opacity: 0.8;
+}
+
+.contact-frame-0:hover {
+  border-width: 40px;
+}
+
+.contact-frame-0:hover + div {
+  opacity: 0;
+}
+
+.contact-frame-1 {
+  border: 20px solid;
+  -o-border-image: linear-gradient(to right, #acb6e5, #86fde8);
+     border-image: -webkit-gradient(linear, left top, right top, from(#acb6e5), to(#86fde8));
+     border-image: linear-gradient(to right, #acb6e5, #86fde8);
+  border-image-slice: 1;
+  top: 20px;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  z-index: -1;
+  opacity: 0.8;
+}
+
+.contact-frame-1:hover {
+  border-width: 40px;
+}
 /*# sourceMappingURL=frames.css.map */

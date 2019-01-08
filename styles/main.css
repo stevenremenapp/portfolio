@@ -583,7 +583,7 @@ body {
   overflow: hidden;
 }
 
-.cntr h1 {
+.cntr .project-header {
   font-family: 'DDCHardware', sans-serif;
   font-size: 90px;
   display: inline-block;
@@ -594,11 +594,11 @@ body {
           animation: nameGrow 3s;
 }
 
-.cntr h1 span {
+.cntr .project-header span {
   display: inline-block;
 }
 
-.cntr h1:after {
+.cntr .project-header:after {
   content: '';
   display: block;
   position: relative;
@@ -607,6 +607,37 @@ body {
   -o-border-image: linear-gradient(to right, #aa076b, #61045f);
      border-image: -webkit-gradient(linear, left top, right top, from(#aa076b), to(#61045f));
      border-image: linear-gradient(to right, #aa076b, #61045f);
+  border-image-slice: 1;
+  z-index: -2;
+  margin-top: -17px;
+  margin-left: 3px;
+  opacity: 0.8;
+}
+
+.cntr .contact-header {
+  font-family: 'DDCHardware', sans-serif;
+  font-size: 90px;
+  display: inline-block;
+  margin: 30px auto 0 auto;
+  letter-spacing: -13px;
+  line-height: 0.8;
+  -webkit-animation: nameGrow 3s;
+          animation: nameGrow 3s;
+}
+
+.cntr .contact-header span {
+  display: inline-block;
+}
+
+.cntr .contact-header:after {
+  content: '';
+  display: block;
+  position: relative;
+  width: 102%;
+  border-bottom: 20px solid;
+  -o-border-image: linear-gradient(to right, #acb6e5, #86fde8);
+     border-image: -webkit-gradient(linear, left top, right top, from(#acb6e5), to(#86fde8));
+     border-image: linear-gradient(to right, #acb6e5, #86fde8);
   border-image-slice: 1;
   z-index: -2;
   margin-top: -17px;

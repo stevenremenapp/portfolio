@@ -399,3 +399,38 @@
         border-width: 40px;
     }
 }
+
+// --- CONTACT FRAMES --- //
+
+.contact-frame-0 {
+    border: 20px solid;
+    border-image: linear-gradient(to right, #e65c00, #f9d423);
+    border-image-slice: 1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    opacity: 0.8;
+    &:hover {
+        border-width: 40px;
+    }
+    &:hover + div {
+        opacity: 0;
+    }
+}
+
+.contact-frame-1 {
+    border: 20px solid;
+    border-image: linear-gradient(to right, #acb6e5, #86fde8);
+    border-image-slice: 1;
+    top: 20px;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    z-index: -1;
+    opacity: 0.8;
+    &:hover {
+        border-width: 40px;
+    }
+}

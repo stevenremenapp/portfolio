@@ -483,7 +483,7 @@ body {
 .cntr {
   text-align: center;
   overflow: hidden;
-  h1 {
+  .project-header {
     font-family: 'DDCHardware', sans-serif;
     font-size: 90px;
     display: inline-block;
@@ -501,6 +501,31 @@ body {
       width: 102%;
       border-bottom: 20px solid;
       border-image: linear-gradient(to right, #aa076b, #61045f);
+      border-image-slice: 1;
+      z-index: -2;
+      margin-top: -17px;
+      margin-left: 3px;
+      opacity: 0.8;
+    }
+  }
+  .contact-header {
+    font-family: 'DDCHardware', sans-serif;
+    font-size: 90px;
+    display: inline-block;
+    margin: 30px auto 0 auto;
+    letter-spacing: -13px;
+    line-height: 0.8;
+    animation: nameGrow 3s;
+    span {
+      display: inline-block;
+    }
+    &:after {
+      content: '';
+      display: block;
+      position: relative;
+      width: 102%;
+      border-bottom: 20px solid;
+      border-image: linear-gradient(to right, #acb6e5, #86fde8);
       border-image-slice: 1;
       z-index: -2;
       margin-top: -17px;
