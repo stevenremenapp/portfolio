@@ -170,25 +170,24 @@
     width: calc(50vw - 659px);
 }
 
-//   .hero-frame-left-17 {
-//     border: solid transparent;
-//     border-image: linear-gradient(to left, #ff8008, #ffc837);
-//     border-image-slice: 1;
-//     border-width: 20px;
-//     top: 340px;
-//     bottom: 340px;
-//     left: 340px;
-//     width: calc(50vw - 699px);
-//   }
+  .frame-17 {
+    border: 20px solid;
+    border-image: linear-gradient(to left, #ff8008, #ffc837);
+    border-image-slice: 1;
+    top: 340px;
+    bottom: 340px;
+    left: 340px;
+    width: calc(50vw - 699px);
+  }
 
 
 // HOMEPAGE - FRAME WIDTH MEDIA QUERIES //
 
-@media screen and (max-width: 1510px) {
-    .frame-16 {
-      display: none;
-    }
-  }
+// @media screen and (max-width: 1510px) {
+//     .frame-16 {
+//       display: none;
+//     }
+//   }
 
 @media screen and (max-width: 1430px) {
     .frame-15 {
@@ -398,9 +397,5 @@
     opacity: 0.8;
     &:hover {
         border-width: 40px;
-        // top: 0;
-        // bottom: 0;
-        // left: 0;
-        // right: 0;
     }
 }

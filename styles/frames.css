@@ -202,10 +202,16 @@
   width: calc(50vw - 659px);
 }
 
-@media screen and (max-width: 1510px) {
-  .frame-16 {
-    display: none;
-  }
+.frame-17 {
+  border: 20px solid;
+  -o-border-image: linear-gradient(to left, #ff8008, #ffc837);
+     border-image: -webkit-gradient(linear, right top, left top, from(#ff8008), to(#ffc837));
+     border-image: linear-gradient(to left, #ff8008, #ffc837);
+  border-image-slice: 1;
+  top: 340px;
+  bottom: 340px;
+  left: 340px;
+  width: calc(50vw - 699px);
 }
 
 @media screen and (max-width: 1430px) {
