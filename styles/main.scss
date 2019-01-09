@@ -296,6 +296,17 @@ body {
   background: linear-gradient(to right, #aa076b, #61045f);
 }
 
+.home.contact-widget,
+.email.contact-widget,
+.github.contact-widget,
+.linkedin.contact-widget {
+  background: linear-gradient(to right, #e65c00, #f9d423);
+}
+
+.home.active.contact-widget {
+  background: linear-gradient(to right, #acb6e5, #86fde8);
+}
+
 .tooltip {
   position: relative;
   &:hover {
@@ -793,7 +804,8 @@ body {
     }
   }
   .cntr {
-    h1 {
+    .project-header,
+    .contact-header {
       font-size: 75px;
       letter-spacing: -11px;
     }
@@ -829,7 +841,8 @@ body {
     }
   }
   .cntr {
-    h1 {
+    .project-header,
+    .contact-header {
       font-size: 65px;
       letter-spacing: -10px;
     }
@@ -851,7 +864,8 @@ body {
 @media screen and (max-width: 515px) {
   .cntr {
     text-align: left;
-    h1 {
+    .project-header,
+    .contact-header {
       text-align: left;
       font-size: 40px;
       margin: 5px auto 0 auto;

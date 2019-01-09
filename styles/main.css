@@ -333,6 +333,19 @@ body {
   background: linear-gradient(to right, #aa076b, #61045f);
 }
 
+.home.contact-widget,
+.email.contact-widget,
+.github.contact-widget,
+.linkedin.contact-widget {
+  background: -webkit-gradient(linear, left top, right top, from(#e65c00), to(#f9d423));
+  background: linear-gradient(to right, #e65c00, #f9d423);
+}
+
+.home.active.contact-widget {
+  background: -webkit-gradient(linear, left top, right top, from(#acb6e5), to(#86fde8));
+  background: linear-gradient(to right, #acb6e5, #86fde8);
+}
+
 .tooltip {
   position: relative;
 }
@@ -966,7 +979,8 @@ body {
     font-size: 50px;
     letter-spacing: -7.5px;
   }
-  .cntr h1 {
+  .cntr .project-header,
+  .cntr .contact-header {
     font-size: 75px;
     letter-spacing: -11px;
   }
@@ -1009,7 +1023,8 @@ body {
   .hero-right .homepage-text h1 {
     display: block;
   }
-  .cntr h1 {
+  .cntr .project-header,
+  .cntr .contact-header {
     font-size: 65px;
     letter-spacing: -10px;
   }
@@ -1043,7 +1058,8 @@ body {
   .cntr {
     text-align: left;
   }
-  .cntr h1 {
+  .cntr .project-header,
+  .cntr .contact-header {
     text-align: left;
     font-size: 40px;
     margin: 5px auto 0 auto;
