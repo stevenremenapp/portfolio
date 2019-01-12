@@ -494,6 +494,7 @@ body {
 .cntr {
   text-align: center;
   overflow: hidden;
+  margin: 0 -3px;
   .project-header {
     font-family: 'DDCHardware', sans-serif;
     font-size: 90px;
@@ -870,6 +871,12 @@ body {
       font-size: 40px;
       margin: 5px auto 0 auto;
       letter-spacing: -6px;
+      padding-left: 3px;
+      &:after {
+        border-bottom: 10px solid;
+        margin-top: -7px;
+        margin-left: 1px;
+      }
     }
     h2 {
       font-size: 18px;
